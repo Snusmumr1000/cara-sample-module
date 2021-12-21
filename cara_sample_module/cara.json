@@ -1,0 +1,5 @@
+{
+    "name": "Blah blah",
+    "module_name": "cara_sample_module",
+    "nodes": ["Exp", "Generator"]
+}
