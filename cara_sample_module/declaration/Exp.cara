@@ -1,4 +1,4 @@
-@namespace(name="cara_sample")
+@namespace(name="cara_sample_module")
 node Exp:
 	handlers:
 		input_value(value1: float)

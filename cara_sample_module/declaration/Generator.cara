@@ -1,4 +1,4 @@
-@namespace(name="cara_sample")
+@namespace(name="cara_sample_module")
 node Generator:
 	events:
 		value(value1: float)
