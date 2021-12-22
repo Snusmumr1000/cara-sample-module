@@ -1,0 +1,6 @@
+@namespace(name="cara_sample")
+node Exp:
+	handlers:
+		input_value(value1: float)
+	events:
+		result(value1: float)
