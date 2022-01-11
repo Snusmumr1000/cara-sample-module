@@ -1,0 +1,7 @@
+[build-system]
+requires = [
+    "setuptools>=42",
+    "wheel",
+    "git+https://github.com/caracalai/caracal.git"
+]
+build-backend = "setuptools.build_meta"
