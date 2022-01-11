@@ -4,3 +4,6 @@ requires = [
     "wheel",
 ]
 build-backend = "setuptools.build_meta"
+[tool.poetry.dependencies]
+# Get the latest revision on the branch named "next"
+caracal = { git = "https://github.com/caracalai/caracal.git", branch = "main" }
