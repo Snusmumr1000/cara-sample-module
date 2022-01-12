@@ -10,8 +10,6 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
     author_email="hello@caracal.ai",
-    package_dir={"": "implementation"},
-    packages=setuptools.find_packages(where="implementation"),
     install_requires=[
         "caracal @ git+https://github.com/caracalai/caracal.git"
     ],
