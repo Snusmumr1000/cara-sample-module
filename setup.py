@@ -13,7 +13,7 @@ setuptools.setup(
     package_dir={"": "implementation"},
     packages=setuptools.find_packages(where="implementation"),
     install_requires=[
-        "git+https://github.com/caracalai/caracal.git"
+        "caracal @ git+https://github.com/caracalai/caracal.git"
     ],
     python_requires=">=3.7",
 )
