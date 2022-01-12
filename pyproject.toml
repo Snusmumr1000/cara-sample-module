@@ -4,6 +4,19 @@ requires = [
     "wheel",
 ]
 build-backend = "setuptools.build_meta"
-[tool.poetry.dependencies]
-# Get the latest revision on the branch named "next"
-caracal = { git = "https://github.com/caracalai/caracal.git", branch = "main" }
+
+[tool.poetry]
+name = "cara_sample_module"
+version = "0.0.1"
+description = "a sample module of caracal project"
+license = "MIT"
+authors = "BroutonLab <hello@broutonlab.com>"
+
+packages = [
+    { include = "declaration", from = "declaration" },
+    { include = "implementation", from = "implementation" },
+]
+
+[[tool.poetry.source]]
+name = 'caracal'
+url = "https://github.com/caracalai/caracal.git"
