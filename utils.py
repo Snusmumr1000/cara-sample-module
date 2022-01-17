@@ -6,7 +6,7 @@ from caracal.execution import Node
 
 def generate_declarations_in_module_from_implementations(module_directory=".", namespace=None):
     module_directory = Path(module_directory)
-    cfg = json.load(open(module_directory / "cara.json"))  # GET repository/cara.json
+    cfg = json.load(open("cara.json"))  # GET repository/cara.json
     module_name, node_names = cfg["module_name"], cfg["exported_nodes"]
     nodes = importlib.import_module(f"{module_directory.name}.implementation")
     declarations = [Node.get_declaration(nodes.__getattribute__(node_name)) for node_name in node_names]
@@ -33,10 +33,6 @@ def install_and_import(package):
 
 if __name__ == '__main__':
     module_name = "cara_sample_module"
-    # install_and_import(module_name)
-    cara_module_implementations = importlib.import_module(f"{module_name}.implementation")
-    node_type_declarations = [str(Node.get_declaration(node)) for node in cara_module_implementations]
-    node_instances = [node() for node in cara_module_implementations]
 
 
     generate_declarations_in_module_from_implementations(module_name)
